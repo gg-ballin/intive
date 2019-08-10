@@ -1,0 +1,11 @@
+h1 {
+  font-weight: 200;
+  color: #0ccac4;
+}
+p, h3 {
+  color: white
+}
+
+.card {
+  cursor: pointer
+}
