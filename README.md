@@ -1,4 +1,4 @@
-# Challenge
+# Challenge Intive
 Para correr el proyecto
 
 1. Clonar el repo
