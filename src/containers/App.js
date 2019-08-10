@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Router, Route} from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history';
 import List from '../components/List'
 import Detail from '../components/Detail'
@@ -25,12 +25,12 @@ class App extends Component {
       .then(results => { return results.json()})
       .then(data => { 
         let users = data.results.map(user => (
-          <a onClick={()=> this.selectUser(user)} className='tc grow bg-light br3 pa3 ma2 dib bw2 shadow-5' id="card">
+          <div onClick={()=> this.selectUser(user)} className='tc grow bg-light br3 pa3 ma2 dib bw2 shadow-5' id="card">
             <img src={user.picture.thumbnail} alt='faceperson'/> 
             <p><strong>Full Name: </strong>{user.name.first + " " + user.name.last}</p>
             <p><strong>City: </strong>{user.location.city}</p>
             <p><strong>State: </strong>{user.location.state}</p>
-          </a>
+          </div>
           ))
           this.setState({ users: users });
         })
