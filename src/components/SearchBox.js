@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Input que recibe searchChange como funcion
+
 const SearchBox = ({searchChange}) => {
   return (
     <div className='pa2'>

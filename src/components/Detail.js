@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
+// Vista de detalle del usuario clickeado. Los datos que 
+// se muestran, son enviados por props.
+
 class Detail extends Component {
-  
-  
     render() {
     const {user} = this.props;
-    console.log('user: ',user)
         return (
         <div className='tc'>
           <h1 className='f1'>User Detail</h1>

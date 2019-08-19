@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-
 import SearchBox from './SearchBox';
 import Scroll from './Scroll';
+
+// Pagina principal que contiene la lista con la request 
+// inicial y el searchbox con la respuesta.
 
 class List extends Component {
   render() {
